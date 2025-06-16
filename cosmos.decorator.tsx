@@ -1,3 +1,5 @@
+import JscadFixture from "./src/JscadFixture"
+
 export default ({ children }: any) => {
-  return <div style={{ backgroundColor: "#fff" }}>{children}</div>
+  return <JscadFixture>{children}</JscadFixture>
 }
