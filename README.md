@@ -54,7 +54,7 @@ jscad-electronics includes models for various components, including:
 
 - Resistors (0402, 0603, 0805)
 - Capacitors
-- ICs (DIP, SOIC, TSSOP, QFN, QFP, BGA)
+- ICs (DIP, SOIC, TSSOP, VSSOP, QFN, QFP, BGA)
 - Diodes (SOD-123)
 - Transistors (SOT-23, SOT-563, SOT-723)
 - And more!
