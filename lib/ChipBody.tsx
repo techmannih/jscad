@@ -15,7 +15,7 @@ export const ChipBody = ({
   height,
   heightAboveSurface = 0.15,
 }: ChipBodyProps) => {
-  const straightHeight = height * 0.75
+  const straightHeight = height * 0.5
   const taperHeight = height - straightHeight
   const taperInset = Math.min(width, length) * 0.12
   const faceWidth = Math.max(width - taperInset, width * 0.75)
