@@ -5,11 +5,13 @@ export const PinRow = ({
   pitch = 2.54,
   longSidePinLength = 6,
   invert,
+  faceup,
 }: {
   numberOfPins: number
   pitch?: number
   longSidePinLength?: number
   invert?: boolean
+  faceup?: boolean
 }) => {
   const pinThickness = 0.63
   const bodyHeight = 2
@@ -19,7 +21,8 @@ export const PinRow = ({
 
   // Flip Z coordinates if invert is true
   const flipZ = (z: number) => (invert ? -z + bodyHeight : z)
-
+  // Flip Z coordinates if faceup is true
+  const flipZFaceup = (z: number) => (faceup ? z : -z + bodyHeight)
   return (
     <>
       <Cuboid
