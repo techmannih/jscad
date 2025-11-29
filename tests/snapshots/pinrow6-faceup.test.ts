@@ -8,4 +8,3 @@ test("6-pin header connector faceup", async () => {
   )
   await expect(pngBuffer).toMatchPngSnapshot(import.meta.path)
 })
-
